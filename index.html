@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Mensaje de WhatsApp</title>
+</head>
+<body>
+    <h1>Enviar Mensaje de WhatsApp</h1>
+    <form id="messageForm">
+        <label for="phone">Teléfono:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label for="message">Mensaje:</label>
+        <input type="text" id="message" name="message"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('messageForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const response = await fetch('/send-message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    phone: phone,
+                    message: message
+                })
+            });
+
+            const result = await response.text();
+            console.log(result);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '1709675593@broadcast',
+    fromMe: false,
+    id: 'ECAD40C5D2FF8A83A7B030AA9F179372',
+    participant: '18292576581@s.whatsapp.net'
+  },
+  messageTimestamp: 1709675659,
+  pushName: 'El Resplandor. Eventos y Opiniones',
+  broadcast: true,
+  message: Message {
+    senderKeyDistributionMessage: SenderKeyDistributionMessage {
+      groupId: '1709675593@broadcast',
+      axolotlSenderKeyDistributionMessage: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    },
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [Array],
+      annotations: [],
+      url: 'https://mmg.whatsapp.net/o1/v/t62.7118-24/f1/m233/up-oil-image-d28c4582-d0f5-44f1-8c7f-672f3b6b393f?ccb=9-4&oh=01_AdRe0wl74eMyaKZHmJoUcjopWFwPLLIk-XAiVfdv6-AQqg&oe=660F203D&_nc_sid=000000&mms3=true',
+      mimetype: 'image/jpeg',
+      caption: 'Dra Mariela Lopez- Neurólogo Internista',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      height: 604,
+      width: 1080,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/o1/v/t62.7118-24/f1/m233/up-oil-image-d28c4582-d0f5-44f1-8c7f-672f3b6b393f?ccb=9-4&oh=01_AdRe0wl74eMyaKZHmJoUcjopWFwPLLIk-XAiVfdv6-AQqg&oe=660F203D&_nc_sid=000000',
+      mediaKeyTimestamp: [Long],
+      jpegThumbnail: [Uint8Array],
+      contextInfo: [ContextInfo],
+      scansSidecar: [Uint8Array],
+      midQualityFileSha256: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'El Resplandor. Eventos y Opiniones',
+  body: '_event_media__35cd46bd-38a5-4ee0-8eb2-2db7ec6667c7',
+  name: 'El Resplandor. Eventos y Opiniones',
+  from: '1709675593@broadcast'
+}
